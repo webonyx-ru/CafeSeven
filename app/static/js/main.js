@@ -186,7 +186,7 @@ $(function () {
 
 window.onscroll = function () {
     var scrolled = window.pageYOffset || document.documentElement.scrollTop;
-    $('#top-slider').css({transform:'translateY('+(scrolled / 2)+'px)'});
+    $('#top-slider').css(np{transform:'translateY('+(scrolled / 2)+'px)'});
     /* Жутко тормозит
     $('#top-slider').offset({
         top: scrolled / 2
