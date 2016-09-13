@@ -2378,6 +2378,10 @@ p {
   margin-bottom: 33px;
 }
 
+.section-divider.no-mb {
+  margin-bottom: 0;
+}
+
 .section-divider .icon {
   display: inline-block;
 }
@@ -2532,6 +2536,7 @@ p {
 .section-price__table-col {
   display: table-cell;
   vertical-align: top;
+  padding: 0 15px;
 }
 
 .section-price__table-col--bold {
@@ -2683,4 +2688,29 @@ p {
 
 .custom-hidden {
   display: none;
+}
+
+.menu-index__section {
+  position: relative;
+  text-align: center;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "PTSerif-Bold";
+  font-size: 24px;
+  color: #fff;
+}
+
+.menu-index__section .container {
+  position: relative;
+  padding: 100px 15px 10px;
+}
+
+.icon-more__18plus {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  width: 30px;
+  height: 30px;
+  background: #fff;
 }
