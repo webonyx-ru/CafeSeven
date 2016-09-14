@@ -2697,13 +2697,36 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "PTSerif-Bold";
-  font-size: 24px;
+  font-size: 22px;
   color: #fff;
+  margin-bottom: 13px;
+  display: block;
+  text-decoration: none;
+}
+
+.menu-index__section:before {
+  display: block;
+  content: '';
+  /*lg(rgba(0,0,0,0), rgba(0,0,0,1))*/
+  background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,1));
+  background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,1));
+  background-image: -o-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,1));
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 50%;
+}
+
+.menu-index__section.mb {
+  margin-bottom: 0;
 }
 
 .menu-index__section .container {
   position: relative;
-  padding: 100px 15px 10px;
+  padding: 123px 15px 13px;
+  z-index: 2;
 }
 
 .icon-more__18plus {
@@ -2712,5 +2735,6 @@ p {
   top: 15px;
   width: 30px;
   height: 30px;
-  background: #fff;
+  background: url(../img/more_than18@2x.png) no-repeat center center;
+  background-size: contain;
 }
